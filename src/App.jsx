@@ -1,10 +1,12 @@
 import { useState } from 'react';
 import MyComponent from './components/useEffect/MyComponent.jsx'
+import Form from './components/useRef/Form.jsx'
 export default function App() {
 const [show, setShow] = useState(true)
 
         return (
           <div className="app">
+            <Form/>
              <div>{show && <MyComponent />}</div>
 
              <button onClick={()=> setShow((prevShow)=> prevShow = !prevShow)}>
